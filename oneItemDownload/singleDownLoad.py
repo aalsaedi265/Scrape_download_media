@@ -37,7 +37,6 @@ video_url= "https://www.youtube.com/watch?v=9bZkp7q19f0"
     # return True
 
 def youtube_download():
-    save_path = r"C:\Users\16075\Downloads\pythonDownload"
 
     try:
         yt = YouTube(video_url)
@@ -58,7 +57,7 @@ def youtube_download():
 
     try:#output_Path makes folder, filename to the name the file, if not placed, will download 
         #directly in the directory
-        yt.streams.get_by_itag(highResVideo).download(output_path='Music Folder')
+        yt.streams.get_by_itag(highResVideo).download(output_path='Music_Folder')
     except:
         print("Error in downloading the video")
 

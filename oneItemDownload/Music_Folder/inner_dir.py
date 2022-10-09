@@ -10,13 +10,13 @@ client = boto3.client('s3',
 
 for file in os.listdir():#iterating over the working directory; os.listdir(path='.'
         print(file)
-        # if  '.py'in file:#speficy file type
+        if  '.mp4'in file: #speficy file type
             
-        bucket_to_upload_too = 'pythondownloads'
-        #file will be stored in file called downloads, STR{I} WILL BE THE NAME OF FILE
-        upload_file_key = 'all_downloads/'+str(file)
-            
-        client.upload_file(file, bucket_to_upload_too, upload_file_key)
+                bucket_to_upload_too = 'pythondownloads'
+                #file will be stored in file called downloads, STR{I} WILL BE THE NAME OF FILE
+                upload_file_key = 'all_downloads/'+str(file)
+                
+                client.upload_file(file, bucket_to_upload_too, upload_file_key)
 
 
 
