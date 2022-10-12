@@ -8,7 +8,12 @@ driver.get('https://www.gamingbible.co.uk/cdn-cgi/image/width=720,quality=70,for
 
 time.sleep(2)
 
-driver.save_screenshot('oneItemDownload/screenShot_target/keanu_plays_johnney.png')
+# driver.save_screenshot('oneItemDownload/screenShot_target/keanu_plays_johnney.png')
+
+#last name will be file name, any file exetenion like jpg or pdf or etc
+driver.get_screenshot_as_file('oneItemDownload/screenShot_target/keanu_as_johnney_file.jpg')
+
+
 
 #scroll, click, inpute, grab, dqonload, upload.
 
