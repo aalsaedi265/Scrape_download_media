@@ -33,7 +33,7 @@ def download_video():
             print(url)  
             try:
                 
-                video.streams.get_highest_resolution().download(output_path="dowLoadToo")
+                video.streams.get_highest_resolution().download(output_path="video_downloads")
             except:
                 print('Error in downloading')
         
@@ -51,7 +51,7 @@ def send_video_AWS():
             print(file)
             bucket_to_upload_too= 'pythondownloads'
             
-            thepath= 'dowLoadToo/'+file
+            thepath= 'video_downloads/'+file
             
             upload_file_key= 'exp7_videos/'+ str(file)
             

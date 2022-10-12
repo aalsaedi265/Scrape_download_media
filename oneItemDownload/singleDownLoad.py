@@ -22,19 +22,7 @@ def google_icon_different_method():
 
 video_url= "https://www.youtube.com/watch?v=9bZkp7q19f0"
 
-# def video_downLoad(url):
-    
-#     h = requests.head(url,allow_redirects=True)
-#     header= h.headers
 
-#     content_type = header.get('Content-type')
-#     if 'text' in content_type.lower():
-#         return False
-#     if 'html' in content_type.lower():
-#         return False
-
-
-    # return True
 
 def youtube_download():
 
