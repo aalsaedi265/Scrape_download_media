@@ -1,14 +1,16 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from webdriver_manager.chrome import ChromeDriverManager
 import time
 import boto3
 import os
 from pytube import YouTube
 
 PATH = r'C:\Users\16075\Documents\work\chromedriver.exe'
-
-driver = webdriver.Chrome(PATH)
+driver = webdriver.Chrome(ChromeDriverManager().install())
+#might need to put it in the directory
+# driver = webdriver.Chrome(PATH)
 
 # driver.get('https://www.youtube.com/results?search_query=cyberpunk+2077+best+friend')
 
